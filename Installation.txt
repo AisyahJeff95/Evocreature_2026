@@ -1,0 +1,4 @@
+First, make sure you have the dependencies installed: numpy, graphviz, matplotlib, tdqm, scipy and gym.
+Next, run setup.py in the pureples directory. 
+
+If you get an error while running setup.py, code "python setup.py install --user"
