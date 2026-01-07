@@ -1,0 +1,31 @@
+CPPNの出力
+
+端点に追加するか否か
+サイズ：正方形の面の大きさは予め決めた値で、長軸だけCPPNで決める(最小値は面一辺の長さの3.5倍)　(接点は2つの面)
+関節を固定するか否か
+関節の角度は3変数(X,Y,Z)
+
+端点＝ヒンジの中心で一つのと直方体に3つの端点を設定
+
+config_input :(xyz)*2+1+時刻+直方体の中心座標(xyz)+直方体の端点座標(xyz)=14
+config_output :w+端点(0 OR 1)+長軸+関節(0 or 1)+角度(xyz)=7
+
+
+CPPNへの入力↓
+パーツ生成：発生イベント中 (net.activateを使う)
+Substrate生成:パーツ追加のあと (hyperneat.py を参照)
+
+
+CPPN output:
+端点に追加するか否か・・・１個
+サイズ・・・１個
+関節タイプ・・・１個
+def create_joint(): 内の　linkOrientations.append([*p.getQuaternionFromEuler([0,0,0])])・・・３個
+
+計６個の出力＋ｗ＝７個
+
+
+
+改善点
+Hyperneatのフィードフォワードをリカレントにする
+発生イベントのトリガーをHyperNEATの出力にする

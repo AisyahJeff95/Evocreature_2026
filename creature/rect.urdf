@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<robot name="wedged_rectangular_shape">
+
+    <!-- Define the link -->
+    <link name="link">
+        <!-- Define the visual properties -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0.18 0 0"/>
+            <geometry>
+            <!-- Adjust the dimensions of the box to create a wedged shape -->
+            <box size="7 0.15 0.05"/>
+            </geometry>
+            <material name="textured">
+                <color rgba="1.0 1.0 0.0 1"/>
+            </material>
+        </visual>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value="1.5"/>
+            <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+        </inertial>
+
+        <!-- Define the collision properties -->
+        <collision>
+            <origin xyz="0 0 0" rpy="0.18 0 0"/>
+            <geometry>
+            <!-- Adjust the dimensions of the collision box as well -->
+            <box size="7 0.15 0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Define the joint (for attaching to other objects if needed) -->
+    <!-- <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint> -->
+
+</robot>
