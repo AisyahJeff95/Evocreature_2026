@@ -1,4 +1,4 @@
-Metadata-Version: 1.2
+Metadata-Version: 2.4
 Name: pureples
 Version: 0.0
 Summary: HyperNEAT and ES-HyperNEAT implemented in pure Python
@@ -8,8 +8,6 @@ Author-email: mail@adrianwesth.dk
 Maintainer: simon, adrian
 Maintainer-email: mail@adrianwesth.dk
 License: MIT
-Description: Python implementation of HyperNEAT and ES-HyperNEAT developed by Adrian Westh and Simon Krabbe Munck for evolving arbitrary neural networks. HyperNEAT and ES-HyperNEAT is originally developed by Kenneth O. Stanley and Sebastian Risi
-Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers
 Classifier: Intended Audience :: Education
@@ -19,3 +17,22 @@ Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python :: 3.x
 Classifier: Programming Language :: Python :: Implementation :: PyPy
 Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: neat-python
+Requires-Dist: graphviz
+Requires-Dist: matplotlib
+Requires-Dist: gym
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary
+
+Python implementation of HyperNEAT and ES-HyperNEAT developed by Adrian Westh and Simon Krabbe Munck for evolving arbitrary neural networks. HyperNEAT and ES-HyperNEAT is originally developed by Kenneth O. Stanley and Sebastian Risi
